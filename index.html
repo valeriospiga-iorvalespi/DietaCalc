@@ -29,7 +29,6 @@
     padding: 0 0 80px 0;
   }
 
-  /* HEADER */
   header {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
@@ -70,7 +69,6 @@
   .target-btn:hover { border-color: var(--accent); color: var(--accent); }
   .target-btn .val { color: var(--text); font-weight: 500; }
 
-  /* DAILY SUMMARY */
   .summary {
     margin: 20px 16px;
     background: var(--surface);
@@ -101,12 +99,7 @@
     flex-shrink: 0;
   }
 
-  .ring-wrap svg {
-    transform: rotate(-90deg);
-    width: 100px;
-    height: 100px;
-  }
-
+  .ring-wrap svg { transform: rotate(-90deg); width: 100px; height: 100px; }
   .ring-bg { fill: none; stroke: var(--surface2); stroke-width: 8; }
   .ring-fill {
     fill: none;
@@ -120,8 +113,7 @@
 
   .ring-label {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
@@ -134,11 +126,7 @@
     color: var(--accent);
   }
 
-  .ring-label .kcal-lbl {
-    font-size: 10px;
-    color: var(--text2);
-    margin-top: 2px;
-  }
+  .ring-label .kcal-lbl { font-size: 10px; color: var(--text2); margin-top: 2px; }
 
   .summary-stats { flex: 1; }
 
@@ -151,7 +139,6 @@
   }
 
   .stat-row:last-child { border-bottom: none; }
-
   .stat-label { font-size: 13px; color: var(--text2); }
 
   .stat-value {
@@ -164,7 +151,6 @@
   .stat-value.red { color: var(--danger); }
   .stat-value.blue { color: var(--accent2); }
 
-  /* PROGRESS BAR */
   .progress-bar {
     height: 6px;
     background: var(--surface2);
@@ -183,7 +169,6 @@
 
   .progress-fill.over { background: var(--danger); }
 
-  /* INPUT AREA */
   .input-area {
     margin: 0 16px 16px;
     background: var(--surface);
@@ -220,11 +205,7 @@
   .meal-input:focus { border-color: var(--accent); }
   .meal-input::placeholder { color: var(--text2); }
 
-  .input-actions {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
-  }
+  .input-actions { display: flex; justify-content: flex-end; margin-top: 10px; }
 
   .btn-add {
     background: var(--accent);
@@ -245,10 +226,7 @@
   .btn-add:hover { background: #d4f570; transform: translateY(-1px); }
   .btn-add:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
 
-  /* MEALS LIST */
-  .meals-section {
-    margin: 0 16px;
-  }
+  .meals-section { margin: 0 16px; }
 
   .meals-header {
     display: flex;
@@ -273,7 +251,6 @@
     padding: 14px;
     margin-bottom: 10px;
     animation: slideIn 0.3s ease;
-    position: relative;
   }
 
   @keyframes slideIn {
@@ -288,11 +265,7 @@
     gap: 10px;
   }
 
-  .meal-desc {
-    font-size: 14px;
-    line-height: 1.5;
-    flex: 1;
-  }
+  .meal-desc { font-size: 14px; line-height: 1.5; flex: 1; }
 
   .meal-kcal {
     font-family: 'Syne', sans-serif;
@@ -303,12 +276,7 @@
   }
 
   .meal-kcal span { font-size: 11px; color: var(--text2); font-family: 'DM Sans', sans-serif; font-weight: 400; }
-
-  .meal-time {
-    font-size: 11px;
-    color: var(--text2);
-    margin-top: 4px;
-  }
+  .meal-time { font-size: 11px; color: var(--text2); margin-top: 4px; }
 
   .meal-actions {
     display: flex;
@@ -333,12 +301,7 @@
   .btn-small:hover { border-color: var(--accent2); color: var(--accent2); }
   .btn-small.danger:hover { border-color: var(--danger); color: var(--danger); }
 
-  /* EDIT MODE */
-  .edit-row {
-    display: flex;
-    gap: 8px;
-    margin-top: 8px;
-  }
+  .edit-row { display: flex; gap: 8px; margin-top: 8px; }
 
   .edit-input {
     flex: 1;
@@ -378,10 +341,7 @@
     cursor: pointer;
   }
 
-  /* STORICO */
-  .history-section {
-    margin: 20px 16px 0;
-  }
+  .history-section { margin: 20px 16px 0; }
 
   .history-toggle {
     background: var(--surface);
@@ -401,7 +361,6 @@
   }
 
   .history-toggle:hover { border-color: var(--accent2); color: var(--text); }
-
   .history-content { display: none; margin-top: 10px; }
   .history-content.open { display: block; }
 
@@ -420,18 +379,8 @@
     margin-bottom: 8px;
   }
 
-  .history-day-date {
-    font-family: 'Syne', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-  }
-
-  .history-day-total {
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--accent2);
-  }
+  .history-day-date { font-family: 'Syne', sans-serif; font-weight: 600; font-size: 14px; }
+  .history-day-total { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 16px; color: var(--accent2); }
 
   .history-meal-item {
     font-size: 12px;
@@ -441,7 +390,6 @@
     justify-content: space-between;
   }
 
-  /* MODAL */
   .modal-overlay {
     display: none;
     position: fixed;
@@ -464,19 +412,8 @@
     max-width: 360px;
   }
 
-  .modal h3 {
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 16px;
-  }
-
-  .modal label {
-    display: block;
-    font-size: 13px;
-    color: var(--text2);
-    margin-bottom: 6px;
-  }
+  .modal h3 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 18px; margin-bottom: 16px; }
+  .modal label { display: block; font-size: 13px; color: var(--text2); margin-bottom: 6px; }
 
   .modal input {
     width: 100%;
@@ -492,12 +429,7 @@
   }
 
   .modal input:focus { border-color: var(--accent); }
-
-  .modal-actions {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-  }
+  .modal-actions { display: flex; gap: 10px; justify-content: flex-end; }
 
   .btn-cancel {
     background: none;
@@ -522,10 +454,8 @@
     cursor: pointer;
   }
 
-  /* LOADING / SPINNER */
   .spinner {
-    width: 16px;
-    height: 16px;
+    width: 16px; height: 16px;
     border: 2px solid rgba(0,0,0,0.3);
     border-top-color: #0f0f0f;
     border-radius: 50%;
@@ -534,12 +464,7 @@
 
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  .empty-state {
-    text-align: center;
-    color: var(--text2);
-    font-size: 14px;
-    padding: 30px 0;
-  }
+  .empty-state { text-align: center; color: var(--text2); font-size: 14px; padding: 30px 0; }
 
   .toast {
     position: fixed;
@@ -560,16 +485,13 @@
   .toast.success { border-color: var(--accent); color: var(--accent); }
   .toast.error { border-color: var(--danger); color: var(--danger); }
 
-  /* Tablet / Desktop */
   @media (min-width: 600px) {
     body { max-width: 600px; margin: 0 auto; padding-bottom: 40px; }
-    header { border-radius: 0 0 16px 16px; top: 0; }
   }
 </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="logo">Dieta<span>CALC</span></div>
   <button class="target-btn" onclick="openTargetModal()">
@@ -577,7 +499,6 @@
   </button>
 </header>
 
-<!-- SUMMARY -->
 <div class="summary">
   <div class="summary-date" id="summaryDate">Oggi</div>
   <div class="calorie-ring">
@@ -611,7 +532,6 @@
   </div>
 </div>
 
-<!-- INPUT AREA -->
 <div class="input-area">
   <h3>➕ Aggiungi pasto</h3>
   <textarea
@@ -626,7 +546,6 @@
   </div>
 </div>
 
-<!-- MEALS LIST -->
 <div class="meals-section">
   <div class="meals-header">
     <h3>📋 Pasti di oggi</h3>
@@ -636,7 +555,6 @@
   </div>
 </div>
 
-<!-- STORICO -->
 <div class="history-section">
   <button class="history-toggle" onclick="toggleHistory()">
     📅 Storico giorni passati
@@ -647,7 +565,6 @@
   </div>
 </div>
 
-<!-- MODAL TARGET -->
 <div class="modal-overlay" id="targetModal">
   <div class="modal">
     <h3>🎯 Imposta Target</h3>
@@ -660,10 +577,8 @@
   </div>
 </div>
 
-<!-- TOAST -->
 <div class="toast" id="toast"></div>
 
-<!-- FIREBASE -->
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
   import { getFirestore, collection, addDoc, getDocs, updateDoc, deleteDoc, doc, query, orderBy, where, Timestamp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore.js";
@@ -680,14 +595,10 @@
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
 
-  const ANTHROPIC_KEY = "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";
-
-  // ─── STATE ───────────────────────────────────────────
   let target = parseInt(localStorage.getItem('dietacalc_target') || '2000');
   let todayMeals = [];
   let historyOpen = false;
 
-  // ─── INIT ─────────────────────────────────────────────
   window.addEventListener('DOMContentLoaded', () => {
     updateTargetDisplay();
     loadTodayMeals();
@@ -701,7 +612,6 @@
       now.toLocaleDateString('it-IT', opts).replace(/^\w/, c => c.toUpperCase());
   }
 
-  // ─── TARGET ───────────────────────────────────────────
   window.openTargetModal = () => {
     document.getElementById('targetInput').value = target;
     document.getElementById('targetModal').classList.add('open');
@@ -730,7 +640,6 @@
     document.getElementById('statTarget').textContent = target + ' kcal';
   }
 
-  // ─── LOAD TODAY ───────────────────────────────────────
   async function loadTodayMeals() {
     const today = getTodayString();
     const q = query(
@@ -744,11 +653,10 @@
       renderMeals();
       updateSummaryUI();
     } catch(e) {
-      showToast('Errore caricamento dati', 'error');
+      showToast('Errore caricamento dati: ' + e.message, 'error');
     }
   }
 
-  // ─── ADD MEAL ─────────────────────────────────────────
   window.addMeal = async () => {
     const input = document.getElementById('mealInput');
     const text = input.value.trim();
@@ -781,33 +689,20 @@
     }
   };
 
-  // ─── AI ESTIMATE ──────────────────────────────────────
   async function estimateCalories(description) {
-    const resp = await fetch('https://api.anthropic.com/v1/messages', {
+    const resp = await fetch('/api/estimate', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': ANTHROPIC_KEY,
-        'anthropic-version': '2023-06-01',
-        'anthropic-dangerous-direct-browser-api-access': 'true'
-      },
-      body: JSON.stringify({
-        model: 'claude-haiku-4-5',
-        max_tokens: 100,
-        messages: [{
-          role: 'user',
-          content: `Sei un nutrizionista esperto. Stima le calorie totali di questo pasto: "${description}". Rispondi SOLO con un numero intero, niente altro.`
-        }]
-      })
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ description })
     });
-    if (!resp.ok) throw new Error('Errore API Anthropic');
+    if (!resp.ok) {
+      const err = await resp.json();
+      throw new Error(err.error || 'Errore server');
+    }
     const data = await resp.json();
-    const num = parseInt(data.content[0].text.trim());
-    if (isNaN(num)) throw new Error('Risposta AI non valida');
-    return num;
+    return data.calories;
   }
 
-  // ─── RENDER MEALS ─────────────────────────────────────
   function renderMeals() {
     const container = document.getElementById('mealsList');
     if (todayMeals.length === 0) {
@@ -873,7 +768,6 @@
     }
   };
 
-  // ─── SUMMARY UI ───────────────────────────────────────
   function updateSummaryUI() {
     const consumed = todayMeals.reduce((s, m) => s + m.calories, 0);
     const remaining = target - consumed;
@@ -887,20 +781,17 @@
     document.getElementById('statRemaining').className =
       'stat-value ' + (over ? 'red' : 'blue');
 
-    // Ring
     const circumference = 251;
     document.getElementById('ringFill').style.strokeDashoffset =
       circumference - (circumference * pct);
     document.getElementById('ringFill').style.stroke =
       over ? 'var(--danger)' : 'var(--accent)';
 
-    // Progress bar
     const bar = document.getElementById('progressFill');
     bar.style.width = (pct * 100) + '%';
     bar.className = 'progress-fill' + (over ? ' over' : '');
   }
 
-  // ─── HISTORY ──────────────────────────────────────────
   window.toggleHistory = async () => {
     historyOpen = !historyOpen;
     const content = document.getElementById('historyContent');
@@ -951,7 +842,6 @@
     }
   }
 
-  // ─── UTILS ────────────────────────────────────────────
   function getTodayString() {
     return new Date().toISOString().split('T')[0];
   }
